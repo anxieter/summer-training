@@ -31,7 +31,7 @@ def getQid(url):
     return 0
 class ZhihuCrawler:
     def __init__(self):
-        with open("Zhihu_crawler\zhihu.json", "r", encoding="utf8") as f:
+        with open("zhihu.json", "r", encoding="utf8") as f:
             self.settings = json.load(f)  # Load settings
         logger.info("Settings loaded")
 

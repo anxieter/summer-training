@@ -1,0 +1,2 @@
+修改settings.json内的账号密码即可获取输出，直接在output.txt内输出结果
+注意output.txt的编码为GBK，可能需要手动改一下

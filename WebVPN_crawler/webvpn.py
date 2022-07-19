@@ -195,12 +195,13 @@ class WebVPN:
 
 if __name__ == "__main__":
     # TODO: Write your own query process
-    with open("WebVPN_crawler\settings.json") as f:
+    with open("settings.json") as f:
       dic = json.load(f)
       f.close()
     web = WebVPN(dic)
     web.login_webvpn()
     web.login_info()
-    print(web.get_grades())
-    
+    with open("output.txt","w") as f:
+      f.write(str(web.get_grades()))
+    f.close()
     #raise NotImplementedError
